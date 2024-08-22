@@ -46,11 +46,11 @@ View Product Function (view-product.test.ts): Verifies the functionality for vie
 6. **Using Docker**
 
  ```bash
-  docker build -t Mustafa'sassesment
+  docker build -t Mustafa'sassesment-bun
    ```
 
  ```bash
-  docker run -t Mustafa'sassesment
+  docker run -t Mustafa'sassesment-bun
    ```
 
 
