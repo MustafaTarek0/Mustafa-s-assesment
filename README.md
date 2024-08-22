@@ -12,13 +12,12 @@ This project uses Playwright with TypeScript for end-to-end testing. It includes
 
    ```bash
    git clone https://github.com/MustafaTarek0/Mustafa-s-assesment.git
-   cd your-repository
    ```
 2. **Install dependancies
 
-   ```bash
+ ```bash
    npm install
-   ```
+ ```
  ```bash
    bun i 
    ```
