@@ -1,0 +1,28 @@
+[
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "12345677",
+      "address": "LA",
+      "firstName": "John",
+      "lastName": "Doe",
+      "state": "california",
+      "city": "cairo",
+      "zipCode": "121231",
+      "mobileNumber": "01230123012"
+
+    },
+    {
+        "name": "matt Doe",
+        "email": "matt.doe@example.com",
+        "password": "12312151",
+        "address": "LA",
+        "firstName": "matt",
+        "lastName": "Doe",
+        "state": "california",
+        "city": "cairo",
+        "zipCode": "121231",
+        "mobileNumber": "01230123012"
+    }
+  ]
+  

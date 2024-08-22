@@ -1,0 +1,111 @@
+Feature: User Login
+Scenario: Successful login with valid credentials
+Given the user is on the homepage,
+And the user navigates to the login page,
+When the user enters a valid email address and password,
+And the user clicks the "Login" button,
+Then the user should be logged in successfully,
+And the "Logout" button should be visible on the homepage.
+
+Detailed Steps:
+Given the user is on the homepage:
+
+The test navigates the user to the homepage using Playwright's page navigation methods.
+And the user navigates to the login page:
+
+The test simulates clicking the login button or link, which takes the user to the login page.
+When the user enters a valid email address and password:
+
+The test locates the email and password input fields and fills them with valid test credentials.
+And the user clicks the "Login" button:
+
+The test simulates clicking the "Login" button on the page.
+Then the user should be logged in successfully:
+
+The test checks if the login process was successful, usually by asserting that the page redirects to the expected dashboard or homepage.
+And the "Logout" button should be visible on the homepage:
+
+The test checks for the visibility of the "Logout" button as an indication that the user is logged in.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Feature: Product Search Functionality
+Scenario: Successful search for a product
+Given the user is on the homepage,
+And the user navigates to the products page,
+When the user searches for a product by entering the search query,
+Then the search results should match the expected results for the query.
+
+Detailed Steps:
+Given the user is on the homepage:
+
+The test navigates to the homepage using Playwright's page navigation methods.
+And the user navigates to the products page:
+
+The test simulates clicking a link or button that takes the user to the products page.
+When the user searches for a product by entering the search query:
+
+The test simulates entering a product query in the search bar and triggers the search.
+Then the search results should match the expected results for the query:
+
+The test validates that the results returned by the search match the expected outcome based on the query. This is asserted by comparing the search result text with the expected result in the JSON file.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Feature: User Sign-Up
+Scenario: Successful user registration
+Given the user is on the homepage,
+And the user navigates to the login page,
+When the user fills out the registration form with their details,
+Then the user should be registered successfully and see a success message with the color green.
+
+Detailed Steps:
+Given the user is on the homepage:
+
+The test navigates to the homepage using Playwright's page navigation methods.
+And the user navigates to the login page:
+
+The test simulates clicking a button or link that takes the user to the login or sign-up page.
+When the user fills out the registration form with their details:
+
+The test generates a random number to ensure unique email and name fields.
+The test fills the email and name fields with the data from JSON, prefixed by the random number.
+The test then fills out the rest of the sign-up form with details such as password, address, first name, last name, state, city, zip code, and mobile number.
+The test selects a random option from the country dropdown.
+The test clicks the button to create an account.
+Then the user should be registered successfully and see a success message with the color green:
+
+The test waits for the page to update and then asserts that a success message contains the text "Account Created!".
+The test checks that the color of the success message is green by evaluating its CSS color property.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Feature: View Product
+Scenario: User views product details after searching
+Given the user is on the homepage,
+And the user navigates to the products page,
+When the user performs a search for a product,
+And the user selects a product to view its details,
+Then the user should be redirected to the product details page,
+And the product information should be visible.
+
+Detailed Steps:
+Given the user is on the homepage:
+
+The test navigates to the homepage using Playwright’s page navigation methods.
+And the user navigates to the products page:
+
+The test simulates the action of going to the products page from the homepage.
+When the user performs a search for a product:
+
+The test uses the search functionality to find products based on the query provided in the test data.
+The test validates the search results to ensure they match the expected results.
+And the user selects a product to view its details:
+
+The test clicks on the button or link to view the product details.
+Then the user should be redirected to the product details page:
+
+The test asserts that the URL of the current page is the expected product details URL (https://automationexercise.com/product_details/30).
+And the product information should be visible:
+
+The test checks that the product information element is visible on the page.
